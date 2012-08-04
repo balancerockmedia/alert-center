@@ -1,0 +1,146 @@
+// nib is a powerful lib for stylus that provides cross-browser css3 mixins.
+// No more vendor prefixes. http://visionmedia.github.com/nib/
+@import 'nib'
+
+// Apply a natural box layout model to all elements.
+// http://paulirish.com/2012/box-sizing-border-box-ftw/
+*
+    box-sizing: border-box
+    
+light_color = #3a4048
+dark_color = #242424
+
+#alert_center
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    
+    .application_header_container
+        background: light_color
+        height: 60px
+        
+        .application_header
+            width: 960px
+            margin: 0 auto
+                
+            img
+                position: relative
+                z-index: 100
+            p
+                float: right
+                color: #ffffff
+                font: bold 12px arial
+                margin-top: 23px
+
+    .application_container
+        background: dark_color
+        height: 115px
+        
+        .applications
+            width: 960px
+            margin: 0 auto
+            
+            .application
+                padding: 25px 0 0
+                float: left
+                width: 440px
+                padding-right: 10px
+                    
+                h3
+                    margin: 0 0 5px
+                    font: bold 15px helvetica
+                    color: #696969
+                    
+                    strong
+                        font: bold 15px helvetica
+                        color: #ffffff
+                        
+                p.bundle_identifier
+                    margin: 0 0 15px
+                    color: #696969
+                    font: 12px arial
+                    
+                p.counters
+                    font: 15px helvetica
+                    margin: 0
+                    color: #ffffff
+                    
+                    strong.count
+                        background: #000000
+                        padding: 5px 5px 4px
+                        margin: 0 5px 0 0
+                        
+                    strong.count.users_affected
+                        margin: 0 5px 0 10px
+
+    .notification
+        background: light_color
+        border-bottom: 1px solid #282828
+        border-top: 1px solid #595e65
+        
+        .notification_inner
+            width: 960px
+            margin: 0 auto
+            position: relative
+            padding: 10px 0 10px 0
+            
+            p.message
+                float: left
+                font: 12px arial
+                color: #fff
+                text-shadow: 1px 1px #000000
+                margin: 2px 0 0
+                
+            p.message strong
+                color: #ffffff
+                
+            p.message em
+                font-style: italic
+
+            ul.actions
+                float: right
+                margin: 0
+                font: 10px helvetica
+                color: #ffffff
+                list-style: none
+                
+                li
+                    float: left
+                    margin-left: 8px
+                    
+                    &.date
+                        margin: 2px 0 0
+                    
+                    &.alert_count
+                        background: #B94A48
+                        color: #fff
+                        padding: 1px 9px 2px
+                        border-radius: 9px
+                        font-size: 11px
+                        font-weight: bold
+                        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+                        line-height: 14px
+                    
+                    &.close
+                        margin-top: 4px
+                        margin-left: 10px
+                        
+                        a
+                            color: #fff
+                            text-decoration: none
+                            
+                            &:hover
+                                text-decoration: underline
+
+    .grabber
+        position: absolute
+        bottom: -10px
+        left: 50%
+        margin-left: 13px
+        cursor: pointer
+
+@css {
+    @-moz-document url-prefix() { #alert_center .notification .notification_inner ul.actions li.date { margin: 4px 0 0; } }
+    @-moz-document url-prefix() { #alert_center .notification .notification_inner ul.actions li.alert_count { height: 19px; padding-top: 3px; } }
+}
