@@ -1,5 +1,5 @@
 # Brunch with coffee demo
-This is a sample application using [Brunch](http://brunch.io/) and CoffeeScript](http://coffeescript.org/) that loads alerts into the top of a browser window via [socket.io](http://socket.io).
+This is a sample application using [Brunch](http://brunch.io/) and [CoffeeScript](http://coffeescript.org/) that loads alerts into the top of a browser window via [socket.io](http://socket.io).
 
 ## Instructions
 
