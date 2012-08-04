@@ -1,5 +1,5 @@
 # Brunch with coffee demo
-This is a sample application using [Brunch](http://brunch.io/) that mimics an IOS style alert center.
+This is a sample application using [Brunch](http://brunch.io/) that loads alerts into the top of a browser window via [socket.io](http://socket.io).
 
 Main languages are [CoffeeScript](http://coffeescript.org/) and
 [Stylus](http://learnboost.github.com/stylus/).
