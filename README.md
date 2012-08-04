@@ -7,4 +7,5 @@ Main languages are [CoffeeScript](http://coffeescript.org/) and
 ## Getting started
 
 Clone the repo and run `npm install` & `brunch build`.
+Then start the server using `coffee server.coffee`.
 
