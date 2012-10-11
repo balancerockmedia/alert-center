@@ -4,5 +4,5 @@ This is a sample application using [Brunch](http://brunch.io/) and [CoffeeScript
 ## Instructions
 
 Clone the repo and run `npm install` & `brunch build`.
-Then start the server using `coffee server.coffee`.
+Then start the server using `coffee server.coffee` and load public/index.html in your browser.
 
